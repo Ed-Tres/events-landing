@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Listas de regalos para eventos: tus invitados reservan desde tu lista de Amazon y tú ves todo en un solo panel.">
+    <meta name="theme-color" content="#ECFCFE">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="[NOMBRE DE LA MARCA] · Listas de regalos para eventos">
+    <meta property="og:description" content="Control de reservas, lista de agradecimientos y hasta 10 listas por evento.">
+    <title>[NOMBRE DE LA MARCA] · Listas de regalos para eventos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            ink: '#082F3A',
+                            brown: '#0B6E83',
+                            coral: '#10596B',
+                            peach: '#A3EFF7',
+                            cream: '#ECFCFE',
+                            mint: '#98DED7',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        fredoka: ['Fredoka', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        :focus-visible { outline: 3px solid #0B6E83; outline-offset: 2px; border-radius: 8px; }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after { transition-duration: 0.01ms !important; }
+        }
+    </style>
+</head>
+
+<body class="bg-brand-cream text-brand-ink font-sans antialiased">
+
+    <!-- Navegación -->
+    <header class="sticky top-0 z-40 bg-brand-cream/95 backdrop-blur border-b border-brand-peach">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+            <a href="#inicio" class="font-fredoka text-xl font-bold">[NOMBRE DE LA MARCA]</a>
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a href="#como-funciona" class="hover:text-brand-brown">Cómo funciona</a>
+                <a href="#funciones" class="hover:text-brand-brown">Funciones</a>
+                <a href="#precios" class="hover:text-brand-brown">Precios</a>
+                <a href="#preguntas" class="hover:text-brand-brown">Preguntas</a>
+            </div>
+            <a href="#contacto" class="px-4 py-2 bg-brand-brown hover:bg-brand-coral text-white text-sm font-semibold rounded-xl transition">Solicitar acceso</a>
+        </nav>
+    </header>
+
+    <main id="inicio">
+
+        <!-- Hero -->
+        <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-14 sm:pt-20 pb-16 grid gap-10 lg:grid-cols-2 lg:items-center">
+            <div>
+                <span class="inline-block px-3 py-1 bg-white text-brand-brown text-sm font-semibold rounded-full border border-brand-peach mb-5">
+                    Acceso anticipado · cupos limitados
+                </span>
+                <h1 class="font-fredoka text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-5">
+                    Tus invitados regalan. Tú ves quién, qué y cuándo.
+                </h1>
+                <p class="text-lg text-brand-ink/80 leading-relaxed mb-8">
+                    Una página para cada evento con las listas de Amazon de los novios, la pareja, el bebé o el cumpleañero. Los invitados reservan un regalo en segundos, sin registrarse. Tú controlas las reservas y la lista de agradecimientos desde un solo panel.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <a href="#contacto" class="px-6 py-3.5 bg-brand-brown hover:bg-brand-coral text-white font-semibold rounded-xl shadow-sm text-center transition">
+                        Solicitar acceso anticipado
+                    </a>
+                    <a href="#como-funciona" class="px-6 py-3.5 bg-white hover:bg-brand-peach/40 text-brand-ink font-semibold rounded-xl border border-brand-peach text-center transition">
+                        Ver cómo funciona
+                    </a>
+                </div>
+            </div>
+
+            <!-- Vista previa del panel (ilustración simple, no captura real) -->
+            <div class="bg-white rounded-3xl border border-brand-peach shadow-sm p-6" aria-hidden="true">
+                <div class="flex items-center justify-between mb-5">
+                    <p class="font-semibold">Baby Shower de Bellum</p>
+                    <span class="text-xs px-2.5 py-1 rounded-full bg-brand-mint font-semibold">2 de 10 listas</span>
+                </div>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between text-sm mb-1"><span>Reservados</span><span class="font-semibold">18 / 30</span></div>
+                        <div class="h-2 rounded-full bg-brand-cream"><div class="h-2 rounded-full bg-brand-brown" style="width:60%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-sm mb-1"><span>Comprados</span><span class="font-semibold">11 / 18</span></div>
+                        <div class="h-2 rounded-full bg-brand-cream"><div class="h-2 rounded-full bg-brand-brown" style="width:61%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-sm mb-1"><span>Notas de agradecimiento</span><span class="font-semibold">7 / 18</span></div>
+                        <div class="h-2 rounded-full bg-brand-cream"><div class="h-2 rounded-full bg-brand-brown" style="width:39%"></div></div>
+                    </div>
+                </div>
+                <div class="mt-6 rounded-xl bg-[#FFFBEB] border border-[#FDE68A] text-[#78350F] text-sm p-4">
+                    3 regalos llevan más de 14 días reservados sin confirmación de compra.
+                </div>
+            </div>
+        </section>
+
+        <!-- Problema -->
+        <section class="bg-white border-y border-brand-peach">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 py-16">
+                <h2 class="font-fredoka text-3xl sm:text-4xl font-bold mb-6">El problema de siempre</h2>
+                <div class="space-y-4 text-lg text-brand-ink/85 leading-relaxed">
+                    <p>Los invitados compran lo mismo. Dos personas regalan la misma cuna, y nadie cubre el monitor de bebé.</p>
+                    <p>Las listas de regalos de las tiendas obligan a usar una sola tienda, y no todos los invitados quieren o pueden comprar ahí.</p>
+                    <p>Al final, el planner pasa horas preguntando quién regaló qué para escribir las notas de agradecimiento.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cómo funciona -->
+        <section id="como-funciona" class="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+            <h2 class="font-fredoka text-3xl sm:text-4xl font-bold mb-3">Cómo funciona</h2>
+            <p class="text-lg text-brand-ink/75 mb-12 max-w-2xl">Tú preparas el evento una vez. Tus invitados solo tienen que tocar un botón.</p>
+            <ol class="grid gap-6 md:grid-cols-3">
+                <li class="bg-white rounded-2xl border border-brand-peach p-7">
+                    <span class="w-10 h-10 rounded-full bg-brand-peach text-brand-brown font-bold flex items-center justify-center mb-4">1</span>
+                    <h3 class="font-bold text-xl mb-2">Pega tus listas de Amazon</h3>
+                    <p class="text-brand-ink/75">Agrega el enlace de cada lista y la foto y precio de los regalos que quieres destacar. Hasta 10 listas por evento.</p>
+                </li>
+                <li class="bg-white rounded-2xl border border-brand-peach p-7">
+                    <span class="w-10 h-10 rounded-full bg-brand-peach text-brand-brown font-bold flex items-center justify-center mb-4">2</span>
+                    <h3 class="font-bold text-xl mb-2">Comparte un solo enlace</h3>
+                    <p class="text-brand-ink/75">Tus invitados abren la página, eligen un regalo, lo compran en Amazon y escriben su nombre para apartarlo.</p>
+                </li>
+                <li class="bg-white rounded-2xl border border-brand-peach p-7">
+                    <span class="w-10 h-10 rounded-full bg-brand-peach text-brand-brown font-bold flex items-center justify-center mb-4">3</span>
+                    <h3 class="font-bold text-xl mb-2">Agradece sin perseguir a nadie</h3>
+                    <p class="text-brand-ink/75">En el panel ves quién regaló qué, con su mensaje, y puedes marcar cada nota como enviada.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Funciones -->
+        <section id="funciones" class="bg-brand-ink text-brand-cream">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+                <h2 class="font-fredoka text-3xl sm:text-4xl font-bold mb-12">Hecho para quien organiza</h2>
+                <div class="grid gap-x-10 gap-y-8 md:grid-cols-2">
+                    <div>
+                        <h3 class="font-bold text-xl mb-2">Control de reservas</h3>
+                        <p class="text-brand-cream/80">Cada regalo está disponible, reservado o comprado. Si alguien aparta un regalo y no confirma su compra, lo ves señalado para revisarlo.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl mb-2">Lista de agradecimientos</h3>
+                        <p class="text-brand-cream/80">Todos los regalos y mensajes en una tabla. Marca las notas enviadas y exporta la lista a una hoja de cálculo.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl mb-2">Nombres bajo tu control</h3>
+                        <p class="text-brand-cream/80">Decide si los invitados ven quién reservó cada regalo. Por defecto, no lo ven.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl mb-2">Varias listas, una sola página</h3>
+                        <p class="text-brand-cream/80">Una lista para los novios, otra para la luna de miel, otra para el bebé. Todo en el mismo evento, con su propio enlace.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl mb-2">Sin registro para tus invitados</h3>
+                        <p class="text-brand-cream/80">Escriben su nombre y listo. Personas de todas las edades pueden usarla desde el celular, con botones grandes y textos claros.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-xl mb-2">Tu marca, tu evento</h3>
+                        <p class="text-brand-cream/80">El título, la fecha, el lugar y el mensaje de bienvenida son tuyos, y puedes cambiarlos en cualquier momento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Precios -->
+        <section id="precios" class="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+            <h2 class="font-fredoka text-3xl sm:text-4xl font-bold mb-3">Precios</h2>
+            <p class="text-lg text-brand-ink/75 mb-12 max-w-2xl">Pagas por evento según el número de listas. Sin suscripciones obligatorias durante el acceso anticipado.</p>
+            <div class="grid gap-6 md:grid-cols-3">
+                <div class="bg-white rounded-2xl border border-brand-peach p-7 flex flex-col">
+                    <p class="font-semibold text-brand-brown">Evento sencillo</p>
+                    <p class="font-fredoka text-4xl font-bold mt-2">[PRECIO]</p>
+                    <p class="text-sm text-brand-ink/70 mb-6">por evento</p>
+                    <ul class="space-y-2 text-sm mb-8 flex-grow">
+                        <li><i class="fa-solid fa-check text-brand-brown mr-2" aria-hidden="true"></i>Hasta 1 lista</li>
+                        <li><i class="fa-solid fa-check text-brand-brown mr-2" aria-hidden="true"></i>Reservas y lista de agradecimientos</li>
+                        <li><i class="fa-solid fa-check text-brand-brown mr-2" aria-hidden="true"></i>Enlace para compartir</li>
+                    </ul>
+                    <a href="#contacto" class="px-5 py-3 bg-brand-cream hover:bg-brand-peach text-brand-ink font-semibold rounded-xl text-center transition">Solicitar acceso</a>
+                </div>
+                <div class="bg-white rounded-2xl border-2 border-brand-brown p-7 flex flex-col relative">
+                    <span class="absolute -top-3 left-6 px-3 py-0.5 bg-brand-brown text-white text-xs font-semibold rounded-full">Más elegido</span>
+                    <p class="font-semibold text-brand-brown">Evento con varias listas</p>
+                    <p class="font-fredoka text-4xl font-bold mt-2">[PRECIO]</p>
+                    <p class="text-sm text-brand-ink/70 mb-6">por evento</p>
+                    <ul class="space-y-2 text-sm mb-8 flex-grow">
+                        <li><i class="fa-solid fa-check text-brand-brown mr-2" aria-hidden="true"></i>Hasta 3 listas</li>
+                        <li><i class="fa-solid fa-check text-brand-brown mr-2" aria-hidden="true"></i>Todo lo del plan sencillo</li>
+                        <li><i class="fa-solid fa-check text-brand-brown mr-2" aria-hidden="true"></i>Exportación a hoja de cálculo</li>
+                    </ul>
+                    <a href="#contacto" class="px-5 py-3 bg-brand-brown hover:bg-brand-coral text-white font-semibold rounded-xl text-center transition">Solicitar acceso</a>
+                </div>
+                <div class="bg-white rounded-2xl border border-brand-peach p-7 flex flex-col">
+                    <p class="font-semibold text-brand-brown">Evento grande o planner</p>
+                    <p class="font-fredoka text-4xl font-bold mt-2">[PRECIO]</p>
+                    <p class="text-sm text-brand-ink/70 mb-6">por evento, o plan anual para planners</p>
+                    <ul class="space-y-2 text-sm mb-8 flex-grow">
+                        <li><i class="fa-solid fa-check text-brand-brown mr-2" aria-hidden="true"></i>Hasta 10 listas</li>
+                        <li><i class="fa-solid fa-check text-brand-brown mr-2" aria-hidden="true"></i>Varios eventos al año</li>
+                        <li><i class="fa-solid fa-check text-brand-brown mr-2" aria-hidden="true"></i>Soporte prioritario</li>
+                    </ul>
+                    <a href="#contacto" class="px-5 py-3 bg-brand-cream hover:bg-brand-peach text-brand-ink font-semibold rounded-xl text-center transition">Hablemos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Preguntas frecuentes -->
+        <section id="preguntas" class="bg-white border-y border-brand-peach">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 py-20">
+                <h2 class="font-fredoka text-3xl sm:text-4xl font-bold mb-10">Preguntas frecuentes</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">¿Mis invitados necesitan crear una cuenta?</h3>
+                        <p class="text-brand-ink/80">No. Solo escriben su nombre para reservar un regalo. Si prefieren, también pueden iniciar sesión con Google.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">¿Puedo usar mis listas de Amazon?</h3>
+                        <p class="text-brand-ink/80">Sí. La página enlaza a tus listas tal como están. No cambiamos nada en Amazon ni necesitamos acceso a tu cuenta.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">¿Cómo sé si un regalo ya fue comprado?</h3>
+                        <p class="text-brand-ink/80">Amazon no nos informa las compras. El invitado confirma con un botón después de comprar. Si nunca lo confirma, el regalo aparece señalado para que lo revises tú.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">¿Guardan datos de pago?</h3>
+                        <p class="text-brand-ink/80">No. Las compras se hacen en Amazon, y nosotros no tenemos acceso a tarjetas ni a datos de pago de tus invitados.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">¿Los nombres de los invitados son públicos?</h3>
+                        <p class="text-brand-ink/80">Solo si tú lo activas. Por defecto, los invitados ven "Regalo reservado" y solo tú ves quién lo reservó.</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">¿Qué pasa después del evento?</h3>
+                        <p class="text-brand-ink/80">La lista se cierra en la fecha que indiques, y tus datos siguen disponibles para las notas de agradecimiento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="max-w-4xl mx-auto px-4 sm:px-6 py-20 text-center">
+            <h2 class="font-fredoka text-3xl sm:text-4xl font-bold mb-4">Solicita tu acceso anticipado</h2>
+            <p class="text-lg text-brand-ink/80 mb-10 max-w-2xl mx-auto">Estamos abriendo los primeros lugares con planners y organizadores de eventos. Cuéntanos qué evento tienes en mente y te respondemos en menos de 24 horas.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-3">
+                <a href="https://wa.me/50761300188?text=Hola%2C%20quiero%20solicitar%20acceso%20anticipado%20a%20la%20plataforma%20de%20listas%20de%20regalos"
+                   target="_blank" rel="noopener"
+                   class="px-6 py-3.5 bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold rounded-xl shadow-sm inline-flex items-center justify-center gap-2 transition">
+                    <i class="fa-brands fa-whatsapp text-xl" aria-hidden="true"></i> Escribir por WhatsApp
+                </a>
+                <a href="mailto:[CORREO DE CONTACTO]?subject=Acceso%20anticipado"
+                   class="px-6 py-3.5 bg-white hover:bg-brand-peach/40 text-brand-ink font-semibold rounded-xl border border-brand-peach inline-flex items-center justify-center gap-2 transition">
+                    <i class="fa-regular fa-envelope" aria-hidden="true"></i> Enviar correo
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t border-brand-peach">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row justify-between gap-4 text-sm text-brand-ink/70">
+            <p>© <span id="year"></span> [NOMBRE DE LA MARCA]. Todos los derechos reservados.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-brand-brown">Aviso de privacidad</a>
+                <a href="#" class="hover:text-brand-brown">Términos de uso</a>
+            </div>
+        </div>
+        <p class="max-w-6xl mx-auto px-4 sm:px-6 pb-8 text-xs text-brand-ink/60">
+            Amazon es una marca de Amazon.com, Inc. o sus filiales. Esta plataforma no está afiliada ni respaldada por Amazon.
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
