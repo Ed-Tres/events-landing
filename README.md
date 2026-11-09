@@ -8,8 +8,10 @@ Estado: **acceso anticipado.** La landing no promete funciones que aún no esté
 
 ```
 landing-planner/
-├── index.html   # Landing completa: diseño, secciones y contacto
-└── README.md    # Este archivo
+├── index.html      # Landing: diseño, oferta, precios y contacto
+├── privacidad.html # Aviso de privacidad (Ley 81 de 2019, Panamá)
+├── terminos.html   # Términos de uso
+└── README.md       # Este archivo
 ```
 
 ## Publicar en GitHub Pages
@@ -21,16 +23,11 @@ landing-planner/
 
 ## Antes de publicar: completar los datos
 
-Ya están listos: nombre **edtres** y precios de prueba ($29 evento sencillo, $49 varias listas, $99 evento grande, $249 al año para planners). Antes de publicar falta:
-
-| Marcador | Dónde aparece | Qué poner |
-|---|---|---|
-| `[CORREO DE CONTACTO]` | botón de correo | Correo para solicitudes |
-| `50761300188` | botón de WhatsApp | Confirmar que es el número comercial |
+Ya están listos: nombre **edtres**, precios de prueba, correo de contacto y número de WhatsApp.
 
 Revisa también:
 
-- **Aviso de privacidad y términos de uso.** Los enlaces del pie apuntan a `#`. Antes de cobrar, deben existir las páginas reales.
+- **Aviso de privacidad y términos de uso.** Están creados como borrador. Antes de cobrar, revísalos con un abogado en Panamá. Este texto no es asesoría legal.
 - **Texto de Amazon.** El pie de página aclara que no hay afiliación. Mantenlo.
 - **Vista previa del panel.** Es una ilustración, no una captura real. Reemplázala cuando el panel esté conectado a Firebase.
 
