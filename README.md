@@ -1,7 +1,4 @@
-# events-landing
-Commercial site for event planners and organizers.
-
-# [NOMBRE DE LA MARCA] · Landing
+# edtres · Landing
 
 Sitio comercial para planners y organizadores de eventos. Presenta la plataforma de listas de regalos con reservas, lista de agradecimientos y hasta 10 listas por evento.
 
@@ -24,14 +21,12 @@ landing-planner/
 
 ## Antes de publicar: completar los datos
 
-Busca estos marcadores en `index.html` (Ctrl + F) y reemplázalos:
+Ya están listos: nombre **edtres** y precios de prueba ($29 evento sencillo, $49 varias listas, $99 evento grande, $249 al año para planners). Antes de publicar falta:
 
 | Marcador | Dónde aparece | Qué poner |
 |---|---|---|
-| `[NOMBRE DE LA MARCA]` | título, menú, pie de página | Nombre comercial definitivo |
-| `[PRECIO]` (3 veces) | sección de precios | Precio por evento de cada plan |
 | `[CORREO DE CONTACTO]` | botón de correo | Correo para solicitudes |
-| `50761300188` | botón de WhatsApp | Confirmar que es el número de contacto comercial |
+| `50761300188` | botón de WhatsApp | Confirmar que es el número comercial |
 
 Revisa también:
 
